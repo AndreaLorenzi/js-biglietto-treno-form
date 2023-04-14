@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bigleitto del treno form</title>
-    <link rel="stylesheet" href="assets/style.css">
-    
-</head>
-<body>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biglietto treno</title>
+        <script src="js/javascript.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>Calcola il prezzo del biglietto</h1>
+              
+                <label for="passengerName">Nome e Cognome</label>
+                <input type="text" id="passengerName" placeholder="Inserire nome e cognome">
+                <label for="journeyDistance">Km da percorrere</label>
+                <input type="text" id="journeyDistance" placeholder="Inserire km da percorrere">
+                <label for="passengerAge">Età</label>
+                <input type="text" id="passengerAge" placeholder="Inserire età">
+             
+                <button>Calcola</button>
+            </section>
 
-</body>
+            <section>
+                <h1>Il tuo biglietto</h1>
+                <div>
+                    <span> Nome passeggero:</span>
+                    <span id="passengerNameShow"></span> 
+                </div>
+
+                <div>
+                    <span>Carrozza:</span>
+                    <span id="cabinShow"></span>
+                </div>
+
+                <div>
+                    <span>Codice CP:</span>
+                    <span id="codeShow"></span>
+                </div>
+
+                <div>
+                    <span> Tariffa applicata:</span>
+                    <span id="saleShow"></span> 
+                </div>
+
+                <div>
+                    <span> Prezzo del biglietto:</span>
+                    <span id="ticketPriceShow"></span>
+                </div>
+             </section>
+        </main>
+    </body>
 </html>
